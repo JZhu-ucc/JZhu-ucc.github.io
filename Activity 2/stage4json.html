@@ -5,8 +5,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Stage 4 JSON Activity</title>
 </head>
+<style type="#div1 {
+    background: blue;
+    height: 50px;
+    width: 0px;
+    border-radius: 10px;
+}
+#div2 {
+    background: red;
+    height: 50px;
+    width: 0px;
+    border-radius: 10px;
+}
+#div3 {
+    background: green;
+    height: 50px;
+    width: 0px;
+    border-radius: 10px;
+}
+p {
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 30px;
+}"></style>
 <body>
-
+<h1>HIV Infection Rates Compared Proportionally By Country<h1>
+<div id = "div1"><p id = "p1"></p>
+</div>
+<div id = "div2"><p id = "p2"></p>
+</div>
+<div id = "div3"><p id = "p3"></p>
+</div>
 
 
 
@@ -16,22 +45,22 @@
 	var staticUrl = 'https://raw.githubusercontent.com/JZhu-ucc/JZhu-ucc.github.io/master/Activity%202/data/hivdata.json'; 
 	$.getJSON(staticUrl, function(data) {
         
-    country1Data = data.fact[1].Value; //Get value from JSON A
-    loc1 = country1Data.indexOf("["); //Locate the [ bracket B
-    val1 = country1Data.substring(0,loc1); // All values have [ C
-    val1 = val1.replace(/ /g,""); //replace all " " with "" D
-    val1 = parseInt(val1); //convert val1 to into int E
-    country1Data = data.fact[1].Value; //Get value from JSON A
-    loc2 = country1Data.indexOf("["); //Locate the [ bracket B
-    val2 = country1Data.substring(0,loc1); // All values have [ C
-    val2 = val1.replace(/ /g,""); //replace all " " with "" D
-    val2 = parseInt(val1); //convert val1 to into int E
-    country1Data = data.fact[1].Value; //Get value from JSON A
-    loc3 = country1Data.indexOf("["); //Locate the [ bracket B
-    val3 = country1Data.substring(0,loc1); // All values have [ C
-    val3 = val1.replace(/ /g,""); //replace all " " with "" D
-    val3 = parseInt(val1); //convert val1 to into int E
-    country1Data = data.fact[1].Value; //Get value from JSON A
+    country1Data = data.fact[1].Value; 
+    loc1 = country1Data.indexOf("["); 
+    val1 = country1Data.substring(0,loc1);
+    val1 = val1.replace(/ /g,""); 
+    val1 = parseInt(val1); 
+    country1Data = data.fact[1].Value; 
+    loc2 = country1Data.indexOf("["); 
+    val2 = country1Data.substring(0,loc1); 
+    val2 = val1.replace(/ /g,""); 
+    val2 = parseInt(val1); 
+    country1Data = data.fact[1].Value; 
+    loc3 = country1Data.indexOf("["); 
+    val3 = country1Data.substring(0,loc1); 
+    val3 = val1.replace(/ /g,""); 
+    val3 = parseInt(val1); 
+    country1Data = data.fact[1].Value; 
     });
 </script>
 </body>
