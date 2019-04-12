@@ -7,6 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+  background-color: #F3E0BE;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -68,11 +73,12 @@ body {
 <body>
 
 <div class="header">
-  <a href="#default" class="logo"></a>
+  <a href="" class="logo"></a>
   <div class="header-right">
-    <a class="active" href="#ungoals">Un Goals website</a>
+    <a class="active" href="https://www.un.org/development/desa/disabilities/envision2030.html">Un Goals website</a>
   </div>
 </div>
+
 
 <div style="padding-left:20px">
   <h1>Climate Action and Consumerism: What we can do to better the world</h1>
@@ -93,22 +99,19 @@ img {
   vertical-align: middle;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -125,19 +128,18 @@ img {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -146,7 +148,7 @@ img {
   top: 0;
 }
 
-/* Container for image text */
+
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -160,13 +162,12 @@ img {
   clear: both;
 }
 
-/* Six columns side by side */
+
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -178,22 +179,25 @@ img {
 </style>
 <body>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
+
+
+<a name="slideshow"></a>
+<h2 style="text-align:center" >Slideshow Gallery</h2>
 
 <div class="container">
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="goals.png" style="width:100%">
+    <div class="numbertext">1 / 3</div>
+    <img src="resources/goals_logo.png" style="width:100%, vertical-align:center">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="climate.png" style="width:100%">
+    <div class="numbertext">2 / 3</div>
+    <img src="resources/climate.png" style="width:70%,height:70%,vertical-align:center">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="resources/responsible.png" style="width:100%">
+    <div class="numbertext">3 / 3</div>
+    <img src="resources/responsible.png" style="width:100%,height:100%,vertical-align:center">
   </div>
     
  
@@ -206,13 +210,13 @@ img {
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="goals_logo.png" style="width:100%" onclick="currentSlide(1)" alt="UN Goals">
+      <img class="demo cursor" src="resources/goals_logo.png" style="width:100%" onclick="currentSlide(1)" alt="UN Goals">
     </div>
     <div class="column">
-      <img class="demo cursor" src="climate.png" style="width:100%" onclick="currentSlide(2)" alt="Climate action">
+      <img class="demo cursor" src="resources/climate.png" style="width:100%" onclick="currentSlide(2)" alt="Climate action">
     </div>
     <div class="column">
-      <img class="demo cursor" src="responsible.png" style="width:100%" onclick="currentSlide(3)" alt="Responsible consumption and production`">
+      <img class="demo cursor" src="resources/responsible.png" style="width:100%" onclick="currentSlide(3)" alt="Responsible consumption and production`">
     </div>
     <div class="column">
    
@@ -250,6 +254,74 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+img {
+  vertical-align: middle;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="page2.html">Climate Action</a>
+  <a href="page3.html"> C & P</a>
+  <a href="#slideshow"> Slideshow</a>
+  <a href="#body"> Body</a>
+</div>
+
+<div class="main"> ##this is how you tag stuff with a in-page link. To link use #(insert link) in href.
+  <a name="body"></a>
+  <p> The main body. Currently not up yet</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+
+</div>  
 </body>
 </html>
 
