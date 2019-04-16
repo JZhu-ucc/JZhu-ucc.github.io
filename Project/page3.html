@@ -86,7 +86,7 @@ img {
   left: 10px;
   background: #eee;
   overflow-x: hidden;
-  padding: 8px 0;
+  padding: 8px 10;
 }
 
 .sidenav a {
@@ -104,14 +104,15 @@ img {
 .main {
   margin-left: 140px; 
   font-size: 28px; 
-  padding: 0px 10px;
+  padding: 10px 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: px;}
   .sidenav a {font-size: 18px;}
 }
 </style>
+
 <style>
 div.a {
   text-align: center;
@@ -119,7 +120,7 @@ div.a {
 </style>
 <style>
 body {
-  background-color: #339933;
+  background-color: #cc9900;
 }
 </style>
 
@@ -127,16 +128,28 @@ body {
 
 
 <body>
-	<div class="header">
-  <a href="" class="logo"></a>
+<div class="header">
+  <a href="page1.html">Homepage</a>
+  <a href="page2.html">Climate change</a>
+  <a href="page3.html">C & P</a>
   <div class="header-right">
     <a class="active" href="https://www.un.org/development/desa/disabilities/envision2030.html">Un Goals website</a>
   </div>
 </div>
-<div class="sidenav">
-   <a href="page1.html">Home</a>
-   <a href="page2.html">Climate Action</a>
+
 </div>
+<div class="sidenav">
+   <a href="#body">Body</a>
+   <a href="#bibliography">Bibliography</a>
+</div>
+<a name="body"></a>
+<div class = "a">
 <h1>Responsible Consumption and Production</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien augue, mollis ut neque nec, feugiat eleifend arcu. In nec nulla ipsum. Phasellus scelerisque dapibus facilisis. Sed eu consectetur ipsum. Nulla facilisi. Curabitur ut consectetur justo, at malesuada felis. Cras porttitor massa nibh, eu ornare urna feugiat eu. Nullam aliquet non neque convallis varius. Cras nibh augue, congue vel augue vitae, vestibulum imperdiet mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut pellentesque libero.</p>
+
+<a name="bibliography"></a>
+<p>Bibliography</p>
+<p>https://www.statista.com/chart/16292/per-capita-co2-emissions-of-the-largest-economies/</p>
+<p>http://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html</p>
 </body>
 </html>
